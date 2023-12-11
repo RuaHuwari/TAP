@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap coding assignment</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li class="home"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="#"><i class="fas fa-phone"></i> Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content-container">
+  <div class="text-content">
+    <section >
+      <h1 class="first">Welcome to my site</h1>
+      <h2 class="second">Hi, I'm Rua, a software <b class="engineer">engineer</b></h2>
+      <p class="para1">I'm a software engineering student, I'm currently pursuing my bachelor degree at Al-Najah National University.<a class="seemore" href="#" id="see-more" data-target="hidden">See More!<br></a></p>
+
+      <p id="hidden" class="para2">I am a fifth-year student, which means I am just one step away from graduationg. I am ready to get professional training and get hired.</p>
+    </section>
+
+    <section >
+      <button class="button1">Hire me !</button>
+      <button class="button2">See My Project</button>
+    </section>
+  </div>
+<div class="imageshadow">
+  <div class="image-container">
+    <img src="Me.jpg" >
+  </div>
+</div>
+</div>
+
+
+<script>
+  document.getElementById('see-more').addEventListener('click', function() {
+    var hiddenParagraph = document.getElementById('hidden');
+    hiddenParagraph.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
